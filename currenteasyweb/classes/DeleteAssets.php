@@ -57,6 +57,18 @@ return 'Deleted Sucessfully';
 }
 
 
+	public static  function DeleteVendor(){
+$id=Common::remove_sql_injection($_POST['vendor_id']);
+$add_query="delete from vendors where id='$id'";
+$run_qry=Common::InsertData($add_query);
+if($run_qry){
+
+return 'Deleted Sucessfully';
+
+}
+}
+
+
 
 public static  function DeleteGroup(){
 
@@ -199,6 +211,14 @@ if(isset($_POST['delete_requester'])){
 DeleteAssets::DeleteRequester();
 echo Common::SuccessDailog('  Requester Deleted ');
 }
+
+if(isset($_POST['delete_vendor'])){
+DeleteAssets::DeleteVendor();
+echo Common::SuccessDailog('  Vendor Deleted ');
+}
+
+
+
 
 
 

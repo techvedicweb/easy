@@ -15,6 +15,18 @@ body {
      position: relative;
      top: 50px;
   }
+
+.add_vendors {
+    margin-left: -1px;
+    margin-top: -39px;
+}
+
+.add_assets {
+    margin-left: -1px;
+    margin-top: -39px;
+}
+
+
 .no-left{left:0 !important;} 
 .padding-60{padding-top:60px; padding-bottom:60px;}
 .padding-10{padding:10px}

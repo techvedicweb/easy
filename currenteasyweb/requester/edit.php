@@ -25,7 +25,7 @@ foreach ($requester_obj as $requester_val) ?>
                   <div class="col-lg-5 text-right MrTpMd-10"> 
 
                   	
-                  <a href="<?php echo WEB_ROOT;?>agents/index.php" class="btn btn-danger btn-round" style="margin-top:3px; position:relative">Cancel</a>
+                  <a href="<?php echo WEB_ROOT;?>requester/index.php" class="btn btn-danger btn-round" style="float:right">Cancel</a>
                      <form id="form" enctype="multipart/form-data"> 
                     <div class="btn-group">
                        <input type="submit" value="Update" data-inline="true" data-rel="back"  name="add_requester" class="btn btn-dark btn-round">

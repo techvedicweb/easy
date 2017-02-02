@@ -128,6 +128,29 @@ return 'Updated Sucessfully';
 
 
 
+public  function UpdateVendor(){
+
+$id=Common::remove_sql_injection((isset($_POST['id'])) ? $_POST['id'] : 'null');
+$vendornew_name=Common::remove_sql_injection((isset($_POST['vendornew_name'])) ? $_POST['vendornew_name'] : null);
+$vendornew_primary_contact=Common::remove_sql_injection((isset($_POST['vendornew_primary_contact'])) ? $_POST['vendornew_primary_contact'] : null);
+$email=Common::remove_sql_injection((isset($_POST['email'])) ? $_POST['email'] : null);
+$vendor_mobile=Common::remove_sql_injection((isset($_POST['vendor_mobile'])) ? $_POST['vendor_mobile'] : null);
+$description=Common::remove_sql_injection((isset($_POST['description'])) ? $_POST['description'] : null);
+$line1=Common::remove_sql_injection((isset($_POST['line1'])) ? $_POST['line1'] : null);
+$line2=Common::remove_sql_injection((isset($_POST['line2'])) ? $_POST['line2'] : null);
+$country=Common::remove_sql_injection((isset($_POST['country'])) ? $_POST['country'] : null);
+$state=Common::remove_sql_injection((isset($_POST['state'])) ? $_POST['state'] : null);
+$city=Common::remove_sql_injection((isset($_POST['city'])) ? $_POST['city'] : null);
+$zipcode=Common::remove_sql_injection((isset($_POST['zipcode'])) ? $_POST['zipcode'] : null);
+
+
+$add_query="update vendors set name='$vendornew_name',primary_contact='$vendornew_primary_contact',mobile='$vendor_mobile',email='$email',description='$description',line1='$line1',line2='$line2',country_id='$country',state_id='$state',city_id='$city',zipcode='$zipcode',create_at=now() where id='$id'";
+$run_qry=Common::InsertData($add_query);
+if($run_qry){
+return 'Updated Sucessfully';
+}
+ 
+}
 
 
 public  function UpdateAgent(){
@@ -343,6 +366,14 @@ if(isset($_POST['update_impact'])){
 UpdateAssets::UpdateImpact();
 echo Common::SuccessDailog('  Impact Updated');
 } 
+
+
+if(isset($_POST['update_vendor'])){
+UpdateAssets::UpdateVendor();
+echo Common::SuccessDailog('  Vendor Updated');
+} 
+
+
 
 if(isset($_POST['update_product'])){
 UpdateAssets::UpdateProduct();

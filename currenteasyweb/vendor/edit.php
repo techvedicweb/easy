@@ -17,11 +17,11 @@
                    <?php require_once("../classes/Include_all.php"); ?>
 
 				  <div class="col-lg-12">
-				  <div class="row" style="background:#fff;" data-spy="affix" data-offset-top="197">
+				  <div class="row" style="background:#fff;" data-offset-top="197">
                   <div class="col-lg-7 padding-top-10"> <a href="<?php echo WEB_ROOT;?>vendor/index.php" class="h4"><i class="icon-left-small"></i>Back to Vendors</a> </div>
                   <div class="col-lg-5 text-right MrTpMd-10"> <a href="<?php echo WEB_ROOT;?>vendor/index.php" class="btn btn-default ">Cancel</a>
                     
-                      <input type="submit" value="Save" name="update_product" class="btn btn-dark ">
+                      <input type="submit" value="Save" name="update_vendor" class="btn btn-dark ">
              
                   </div>
 				 </div> 
@@ -35,46 +35,38 @@
 
 
                   <?php
-$product=Assets::Products($_GET['id']);
-if($product!=''){
-foreach ($product as $product_val) {
-
+$vendor=Assets::Vendor($_GET['id']);
+if($vendor!=''){
+foreach ($vendor as $vendor_val) {
 ?>
 
 
                   <div class="col-sm-6  col-xs-12 padding-bottom-10">
                     <label>Name <span class="text-red">*</span></label>
-                           <!-- <input type="hidden"  name="vendor_name" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="vendor_name" class="form-control" required>
+                        <input type="hidden"  value="<?php echo $vendor_val['id'];?>" id="itil_product_name1" name="id" class="form-control" > 
+                    <input type="text"  value="<?php echo $vendor_val['name'];?>" id="itil_product_name1" name="vendornew_name" class="form-control" required>
                   </div>
                  
 
                <div class="col-sm-6  col-xs-12 padding-bottom-10">
                     <label>Primary Contact <span class="text-red">*</span></label>
-                         <!--   <input type="hidden"  name="id" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="vendor_primary" id="itil_product_name1" name="vendor_primary" class="form-control" required>
+                        
+                    <input type="text"  value="<?php echo $vendor_val['primary_contact'];?>" id="itil_product_name1" name="vendornew_primary_contact" class="form-control" >
                   </div>
 
-                <div class="col-sm-6 col-xs-12">
+             
 
-                    <div class="col-sm-6  col-xs-12 padding-bottom-10" style="padding-left:0">
-                    <label>Phone<span class="text-red">*</span></label>
-                          <!--  <input type="hidden"  name="id" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="vendor_phone" class="form-control" required>
+                  <div class="col-sm-6  col-xs-12 padding-bottom-10" >
+                    <label>Mobile<span class="text-red">*</span></label>               
+                    <input type="text"  value="<?php echo $vendor_val['mobile'];?>" id="itil_product_name1" name="vendor_mobile" class="form-control" >
                   </div>
 
-                  <div class="col-sm-6  col-xs-12 padding-bottom-10" style="padding-right:0">
-                    <label>Mobile<span class="text-red">*</span></label>
-                           <!-- <input type="hidden"  name="id" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="vendor_mobile" class="form-control" required>
-                  </div>
-
-                <div class="clearfix"></div>
-                </div>
+               
+            
 
                  <div class="col-sm-6  col-xs-12 padding-bottom-10">
                     <label>Email<span class="text-red"></span></label>
-                    <input type="text" value=" " id="itil_product_name1" name="vendor_email" class="form-control" required>
+                    <input type="text" value="<?php echo $vendor_val['email'];?> " id="itil_product_name1" name="email" class="form-control" >
                   </div>
                   
                 
@@ -97,7 +89,9 @@ foreach ($product as $product_val) {
                   </ul>
                 </div> 
                 <div id="editor" class="editor-wrapper placeholderText" contenteditable="true"></div>-->
-                <textarea name="vendor_description" id="descr" cols="20" rows="6" style="border:#ccc solid 1px; width: 100%;">
+                <textarea name="description" id="descr" cols="20" rows="6" style="border:#ccc solid 1px; width: 100%;">
+               <?php echo $vendor_val['description'];?>
+
                 </textarea>
                 <!--end-->
 </div>
@@ -109,29 +103,51 @@ foreach ($product as $product_val) {
 
                   <div class="col-sm-6  col-xs-12 padding-bottom-10">
                     <label>Line 1</label>
-                           <!-- <input type="hidden"  name="vendor_name" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="address_line1" class="form-control" required>
+                         
+                    <input type="text"  value="<?php echo $vendor_val['line1'];?>" id="itil_product_name1" name="line1" class="form-control" >
                   </div>
                  
 
                <div class="col-sm-6  col-xs-12 padding-bottom-10">
                     <label>Line 2</label>
-                         <!--   <input type="hidden"  name="id" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="address_line2" class="form-control" required>
+                    
+                    <input type="text"  value="<?php echo $vendor_val['line2'];?>" id="itil_product_name1" name="line2" class="form-control" >
                   </div>
 
                 <div class="col-sm-6 col-xs-12">
 
                     <div class="col-sm-6  col-xs-12 padding-bottom-10" style="padding-left:0">
-                    <label>City</label>
-                          <!--  <input type="hidden"  name="id" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="vendor_city" class="form-control" required>
+                    <label>Country</label>
+                         
+                    <select name="country" id="country_change" class="form-control">
+<?php $location=Location::Country($vendor_val['country_id']);
+foreach ($location as $view_loc) {
+  echo "<option value='".$view_loc['id']."'"; 
+if($vendor_val['country_id']==$view_loc['id']){
+  echo "selected";
+}
+
+  echo ">".$view_loc['name']."</option>";
+}
+?>
+</select>
                   </div>
 
                   <div class="col-sm-6  col-xs-12 padding-bottom-10" style="padding-right:0">
                     <label>State</label>
-                           <!-- <input type="hidden"  name="id" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="vendor_city" class="form-control" required>
+                        
+                    <select name="state" id="states" class="form-control">
+<?php $state_location=Location::State($vendor_val['country_id']);
+foreach ($state_location as $state_view_loc) {
+  echo "<option value='".$state_view_loc['id']."'";
+if($vendor_val['state_id']==$state_view_loc['id']){
+  echo "selected";
+}
+  echo ">".$state_view_loc['name']."</option>";
+}
+?>
+</select>
+
                   </div>
 
                 <div class="clearfix"></div>
@@ -140,15 +156,26 @@ foreach ($product as $product_val) {
                  <div class="col-sm-6 col-xs-12">
 
                     <div class="col-sm-6  col-xs-12 padding-bottom-10" style="padding-left:0">
-                    <label>Country</label>
-                          <!--  <input type="hidden"  name="id" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="vendor_country" class="form-control" required>
+                    <label>City</label>
+                        
+                   <select name="city" id="city" class="form-control">
+<?php $city_location=Location::City($vendor_val['state_id']);
+foreach ($city_location as $city_view_loc) {
+  echo "<option value='".$city_view_loc['id']."'";
+  if($vendor_val['city_id']==$city_view_loc['id']){
+  echo "selected";
+} 
+
+  echo ">".$city_view_loc['name']."</option>";
+}
+?>
+</select>
                   </div>
 
                   <div class="col-sm-6  col-xs-12 padding-bottom-10" style="padding-right:0">
                     <label>Zipcode</label>
-                           <!-- <input type="hidden"  name="id" value="<?php echo $product_val['id'];?>" > -->
-                    <input type="text"  value="" id="itil_product_name1" name="vendor_zipcode" class="form-control" required>
+                        
+                    <input type="text"  value="<?php echo $vendor_val['zipcode'];?>" id="itil_product_name1" name="zipcode" class="form-control" >
                   </div>
 
                 <div class="clearfix"></div>

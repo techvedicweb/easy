@@ -100,6 +100,31 @@ return 'Added Sucessfully';
 }
 
 
+public  function AddVendor(){
+	
+$vendornew_name=Common::remove_sql_injection((isset($_POST['vendornew_name'])) ? $_POST['vendornew_name'] : null);
+$vendornew_primary_contact=Common::remove_sql_injection((isset($_POST['vendornew_primary_contact'])) ? $_POST['vendornew_primary_contact'] : null);
+$email=Common::remove_sql_injection((isset($_POST['email'])) ? $_POST['email'] : null);
+$vendor_mobile=Common::remove_sql_injection((isset($_POST['vendor_mobile'])) ? $_POST['vendor_mobile'] : null);
+$description=Common::remove_sql_injection((isset($_POST['description'])) ? $_POST['description'] : null);
+$line1=Common::remove_sql_injection((isset($_POST['line1'])) ? $_POST['line1'] : null);
+$line2=Common::remove_sql_injection((isset($_POST['line2'])) ? $_POST['line2'] : null);
+$country=Common::remove_sql_injection((isset($_POST['country'])) ? $_POST['country'] : null);
+$state=Common::remove_sql_injection((isset($_POST['state'])) ? $_POST['state'] : null);
+$city=Common::remove_sql_injection((isset($_POST['city'])) ? $_POST['city'] : null);
+$zipcode=Common::remove_sql_injection((isset($_POST['zipcode'])) ? $_POST['zipcode'] : null);
+
+
+$add_query="insert into vendors (name,primary_contact,mobile,email,description,line1,line2,country_id,state_id,city_id,zipcode,create_at) values ('$vendornew_name','$vendornew_primary_contact','$vendor_mobile','$email','$description','$line1','$line2','$country','$state','$city','$zipcode',now())";
+$run_qry=Common::InsertData($add_query);
+if($run_qry){
+return 'Added Sucessfully';
+}
+ 
+}
+
+
+
 
 
 public  function AddItems(){
@@ -334,6 +359,13 @@ if(isset($_POST['add_product'])){
 AddAssets::AddProduct();
 echo Common::SuccessDailog(' New Product Added Sucessfully');
 } 
+
+
+if(isset($_POST['add_vendor'])){
+AddAssets::AddVendor();
+echo Common::SuccessDailog(' New Vendor Added Sucessfully');
+} 
+
 
 
 if(isset($_POST['add_impact'])){

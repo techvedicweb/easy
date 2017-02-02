@@ -20,12 +20,9 @@
 $agent_obj=Assets::Agents($_GET['id']);
 foreach ($agent_obj as $agent_val) ?>
 
-                  <div class="col-lg-7 padding-top-10"> <a href="<?php echo WEB_ROOT;?>agents/index.php" class="h4"><i class="icon-left-small"></i>Back to Contracts</a> </div>
+                  <div class="col-lg-7 padding-top-10"> <a href="<?php echo WEB_ROOT;?>agents/index.php" class="h4"><i class="icon-left-small"></i>Back to Contracts</a>    </div>
                   <div class="col-lg-5 text-right MrTpMd-10"> 
-
-                    
-
-                  <a href="<?php echo WEB_ROOT;?>agents/index.php" class="btn btn-danger btn-round">Cancel</a>
+             <a href="<?php echo WEB_ROOT;?>agents/index.php" class="btn btn-danger btn-round" style="float:right">Cancel</a>
                       <form id="form" enctype="multipart/form-data">
                     <div class="btn-group">
                          

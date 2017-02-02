@@ -59,6 +59,22 @@ return $location_data;
 }
 
 
+
+public static function Vendor($var){
+	if($var==''){
+    	$vendor_query="select * from vendors ";
+	}
+	else{
+	$vendor_query="select * from vendors where id='$var'";
+	}
+
+$vendor_data=Common::FetchData($vendor_query);
+return $vendor_data;
+
+}
+
+
+
 public static function GuropAgent($var){
 	if($var==''){
     	$agent_query="select * from groups ";

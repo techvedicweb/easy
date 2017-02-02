@@ -27,7 +27,7 @@
                   <div class="col-lg-5 text-right MrTpMd-10"> 
 
                   
-                  <a href="<?php echo WEB_ROOT;?>agents/index.php" class="btn btn-danger btn-round">Cancel</a>
+                  <a href="<?php echo WEB_ROOT;?>agents/index.php" class="btn btn-danger btn-round" style="float:right">Cancel</a>
                      <form id="form" enctype="multipart/form-data">
                     <div class="btn-group">
                        

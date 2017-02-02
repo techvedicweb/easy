@@ -18,22 +18,22 @@
 
                   <div class="col-lg-7 h4"><a href="<?php echo WEB_ROOT;?>admin/index.php"><i class="icon-cog"></i>Admin</a></div>
                   <div class="col-lg-5 text-right MrTpMd-10"> 
-                     <a href="<?php echo WEB_ROOT;?>vendor/new.php" class="btn btn-round btn-dark">New Product</a>
+                     <a href="<?php echo WEB_ROOT;?>vendor/new.php" class="btn btn-round btn-dark">New Vendor</a>
                   </div>
                 </div>
                 <div class="clearfix"></div>
               </div>
               <div class="x_content">
-                <h1 class="h4 padding-bottom-10">Products</h1>
+                <h1 class="h4 padding-bottom-10">Vendors</h1>
 				  <!-- start table -->
 				     <div class="table-responsive margin-top-20">
                         <table class="table table-striped jambo_table bulk_action">
                             <thead>
 							  <tr>
 								<th>Name</th>
-								<th>Type</th>
-								<th>Manufacturer</th>
-								<th>Status</th>
+								<th>Email</th>
+								<th>Phone</th>
+								<th>Mobile</th>
 								<th>&nbsp;</th>
 							  </tr>	
 							</thead>
@@ -41,17 +41,17 @@
 							<tbody>
 
                 <?php
-$product=Assets::Products('');
-if($product!=''){
-foreach ($product as $product_val) {
+$vendor=Assets::Vendor('');
+if($vendor!=''){
+foreach ($vendor as $vendor_val) {
 
 ?>
 <tr class="assTable">
-                  <td class=" "><a href="product-detail.php?id=<?php echo $product_val['id'];?>"><?php echo $product_val['name'];?></a></td>
-                  <td class=" "><?php echo $product_val['asset_type'];?> </td>
-                  <td class=" "><?php echo $product_val['manufacturer'];?> <i class="success fa fa-long-arrow-up"></i></td>
-                  <td class=" "><?php echo $product_val['status'];?> </td>
-                  <td class=" "><a href="edit.php?id=<?php echo $product_val['id'];?>"><i class="icon-pencil"></i></a> &nbsp; <form action="" method="post" id="<?php echo $product_val["id"];?>" style="display:none;"><input type="hidden" name="product_id" value="<?php echo $product_val["id"];?>"><input type="hidden" name="delete_product"></form><i onclick="product_delete_form(this.id);" id="<?php echo $product_val["id"];?>" class="icon-trash" style="cursor:pointer;"></i></td>
+                  <td class=" "><a href="vendor-detail.php?id=<?php echo $vendor_val['id'];?>"><?php echo $vendor_val['name'];?></a></td>
+                  <td class=" "><?php echo $vendor_val['email'];?> </td>
+                  <td class=" "><?php echo $vendor_val['primary_contact'];?> <i class="success fa fa-long-arrow-up"></i></td>
+                  <td class=" "><?php echo $vendor_val['mobile'];?> </td>
+                  <td class=" "><a href="edit.php?id=<?php echo $vendor_val['id'];?>"><i class="icon-pencil"></i></a> &nbsp; <form action="" method="post" id="<?php echo $vendor_val["id"];?>" style="display:none;"><input type="hidden" name="vendor_id" value="<?php echo $vendor_val["id"];?>"><input type="hidden" name="delete_vendor"></form><i onclick="vendor_delete_form(this.id);" id="<?php echo $vendor_val["id"];?>" class="icon-trash" style="cursor:pointer;"></i></td>
         </tr>
           <?php      
 }
