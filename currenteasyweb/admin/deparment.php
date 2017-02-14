@@ -1,10 +1,3 @@
-  <!DOCTYPE html>
-<html lang="en">
-<!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> -->
-<body class="nav-md">
-<div class="container body">
-  <div class="main_container">
-   
     <?php require_once("../include/top-nav.php"); 
       require_once("../include/right-nav.php"); 
 ?>

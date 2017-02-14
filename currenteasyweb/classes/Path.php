@@ -1,5 +1,4 @@
 <?php
-
 class Path{
 
 	public function __construct(){
@@ -11,7 +10,7 @@ if($_SERVER["HTTP_HOST"]=="192.168.1.194:8081"){
 	}
 	else{
 		
-		$folder_name='/';
+		$folder_name='/easyweb/';
 	
 	}
 	$root='http://'.$_SERVER["HTTP_HOST"].$folder_name;

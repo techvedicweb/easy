@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<body class="nav-md">
-<div class="container body">
-  <div class="main_container">
-    <?php include("../include/top-nav.php"); ?>
+<?php include("../include/top-nav.php"); ?>
     <?php include("../include/right-nav.php"); ?>
     <div class="right_col" role="main">
       <div class="row checkList">
@@ -176,13 +171,13 @@ $("#assets_type_id").change(function (){
 
 var getproperty=$("#assets_type_id").val();
 if(getproperty!=''){
-   
+  
 $.ajax({
 type:'get',
 url:'../classes/AssetForm',
 data:{'id':getproperty},
 success:function(data){
- 
+
   $("#changed_div").html(data);
  //$("#changed_div").prepend('<p class="left_col padding-5 text-white margin-top-20">Properties</p>');
 

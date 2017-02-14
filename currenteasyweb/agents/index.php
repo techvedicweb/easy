@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<body class="nav-md">
-<div class="container body">
-  <div class="main_container">
     <?php include("../include/top-nav.php"); ?>
     <?php include("../include/right-nav.php"); ?>
     <div class="right_col" role="main">
@@ -102,7 +97,7 @@ else{
             </div>
           </div>
         </div>
-        <div class="col-sm-5 col-md-4 col-lg-3 col-xs-12 margin-top-10">
+ <!--        <div class="col-sm-5 col-md-4 col-lg-3 col-xs-12 margin-top-10">
           <div class="x_panel tile">
             <div class="x_title"><h4>Agents</h4>
               <div class="clearfix"></div>
@@ -111,7 +106,7 @@ else{
               <p>The list shows all Agents added in your help desk. You can edit an existing agent’s permissions and access rights by hovering over the agent and clicking on “Edit”. You can add new agents by clicking on the “New Agent” button.</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <?php include("../include/footer.php"); ?>

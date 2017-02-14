@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> -->
-<body class="nav-md">
-<div class="container body">
-  <div class="main_container">
-   
-    <?php include("../include/top-nav.php"); 
+<?php include("../include/top-nav.php"); 
       include("../include/right-nav.php");
 ?>
     <div class="right_col" role="main">

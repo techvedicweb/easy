@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
-      	<?php 
+<?php 
       	require_once("../include/top-nav.php"); 	
          require_once("../include/right-nav.php"); 
          
@@ -18,7 +13,7 @@
 		  <div class="row checkList">
 		    <div class="col-md-3 col-sm-4 col-xs-12 margin-top-10">
 		  <?php
-		  require_once("../classes /Include_all.php"); 
+		  require_once("../classes/Include_all.php"); 
 		  ?>
 						
 <!-- for category auto Genrate -->

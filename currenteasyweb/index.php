@@ -1,5 +1,5 @@
-
 <?php
+ob_start();
       if(!isset($_SESSION)){session_start();}
        if(!isset($_SESSION['userid'])){
    header('Location:login/index.php');
@@ -43,6 +43,17 @@ echo DOCS_ROOT.$_SESSION['userid']."/profile/".$viewdata['profile_pic'];
              }else{
               echo IMAGE_ROOT."profile.gif";
              } ?>" alt="">
+
+             <?php $name=$viewdata['name'];
+$makeshort = explode(" ", $name);
+$short_name = "";
+foreach ($makeshort as $sn) {
+  $short_name .= $sn[0];
+}
+echo strtoupper($short_name);
+
+?>
+
 
   <span class=" fa icon-angle-down"></span> </a>
           <ul class="dropdown-menu dropdown-usermenu pull-right">

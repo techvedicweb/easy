@@ -1,7 +1,6 @@
 <?php
 require_once('Common.php');
          
-
 // Connect to the DB
 // store in the DB 
 if(!empty($_POST['ok'])) {  
@@ -57,7 +56,7 @@ echo '<div class="padding-5 text-white margin-top-20" style="background:#2A3F54;
 }
     ?>
 
- 
+
               <div class="col-sm-6 col-xs-12 padding-bottom-10">
                   <label> <?=$product['name']?> </label>
                   <input type="text" name="dynamic_form[]"  class="form-control" />

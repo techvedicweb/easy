@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<body class="nav-md">
-<style>.panel-heading.collapsed {
-    margin-bottom: 20px !important;
-}</style>
-<div class="container body">
-  <div class="main_container">
-    <?php include("../include/top-nav.php"); ?>
+ <?php include("../include/top-nav.php"); ?>
     <?php include("../include/right-nav.php"); ?>
+    <style>
+.panel-heading.collapsed {
+    margin-bottom: 20px !important;
+}
+</style>
     <div class="right_col" role="main">
       <div class="row checkList">
         <div class="col-md-9 col-sm-8 col-xs-12 margin-top-10">

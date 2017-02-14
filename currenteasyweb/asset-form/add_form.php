@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> -->
-<body class="nav-md">
-<div class="container body">
-  <div class="main_container">
-   
     <?php include("../include/top-nav.php"); ?>
      <?php include("../include/right-nav.php"); ?>
     <div class="right_col" role="main">
@@ -24,6 +17,7 @@
               </div>
               <div class="x_content">
                 <h1 class="h4 padding-bottom-10">Add Form</h1>
+
           <!-- start table -->
 <?php
 // Connect to the DB
@@ -33,21 +27,21 @@ if(!empty($_POST['ok'])) {
   if( !empty($_POST['delete_ids']) and is_array($_POST['delete_ids'])) {
     // you can optimize below into a single query, but let's keep it simple and clear for now:
     foreach($_POST['delete_ids'] as $id) {
-      $sql = "DELETE FROM assets_form WHERE id=$id && property_id='".$_POST['property_id']."' && assets_type_id='".$_GET['id']."' ";
+      $sql = "DELETE FROM assets_form WHERE id=$id && property_id='".$_POST['property_id']."' && assets_type_id='".$_POST['cat_id']."' ";
       $link->query($sql);
     }
   }
 
   // now, to edit the existing data, we have to select all the records in a variable.
-  if(isset($_GET['proprtyid'])){
-  $sql="SELECT * FROM assets_form where assets_type_id='".$_GET['id']."' && property_id='".$_GET['proprtyid']."' ORDER BY id";
+  if(isset($_POST['property_id'])){
+  $sql="SELECT * FROM assets_form where assets_type_id='".$_POST['cat_id']."' && property_id='".$_POST['property_id']."' ORDER BY id";
   $result = $link->query($sql);
   }
   // now edit them
   while($product = mysqli_fetch_array($result)) {
     // remember how we constructed the field names above? This was with the idea to access the values easy now
-    $sql = "UPDATE assets_form SET assets_type_id='".$_GET['id']."' , name='".$_POST['name'.$product['id']]."'
-    WHERE id='$product[id]' && property_id='".$_POST['property_id']."' && assets_type_id='".$_GET['id']."'";   
+    $sql = "UPDATE assets_form SET assets_type_id='".$_POST['cat_id']."' , name='".$_POST['name'.$product['id']]."'
+    WHERE id='$product[id]' && property_id='".$_POST['property_id']."' && assets_type_id='".$_POST['cat_id']."'";   
     $link->query($sql);
   }
   // (feel free to optimize this so query is executed only when a product is actually changed)
@@ -55,7 +49,7 @@ if(!empty($_POST['ok'])) {
   // adding new products
   if(!empty($_POST['name'])) {
     foreach($_POST['name'] as $cnt => $qty) {
-      $sql = "INSERT INTO assets_form (assets_type_id,name,property_id) VALUES ('".$_GET['id']."','".$_POST['name'][$cnt]."','".$_POST['property_id']."');";
+      $sql = "INSERT INTO assets_form (assets_type_id,name,property_id) VALUES ('".$_POST['cat_id']."','".$_POST['name'][$cnt]."','".$_POST['property_id']."');";
       $link->query($sql);
     }
   } 
@@ -71,12 +65,12 @@ $result = $link->query($sql);
 
 
 <div> 
-  <form method="post">
+  <form method="post" action="">
 <select id="property_id"  name="property_id" class="form-control" required>
   <option value="">Please Select A Property</option>
 <?php 
 $property_name=Assets::Item_property_name($_GET['id']);
-if($property_name!='')
+if($property_name!=''){
 foreach ($property_name as $property_name_val) {
 echo "<option value='".$property_name_val['id']."'";
 if(isset($_GET['proprtyid'])){
@@ -87,7 +81,7 @@ echo "selected";
 
 echo ">".$property_name_val['name']."</option>";
 }
-
+}
 ?>
 </select>
 <input type="hidden" id="cat_id" name="cat_id" value="<?php echo $_GET['id']; ?>" />
@@ -135,10 +129,6 @@ if(isset($_GET['proprtyid'])){
   <?php endwhile;?>
 
   </div>
-<script type="text/javascript">
-
-
-</script>
    <p><input type="submit" name="ok" value="Save Changes" class="btn btn-round btn-dark"></p>
 
   </form>
@@ -146,6 +136,7 @@ if(isset($_GET['proprtyid'])){
 
 <?php
 }
+
 ?>
 
 </div>

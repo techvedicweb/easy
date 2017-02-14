@@ -1,19 +1,26 @@
-<?php
+<?php 
+error_reporting(0);
+ob_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<body class="nav-md">
+<div class="container body">
+  <div class="main_container">
+    <?php
 require_once('../classes/Path.php');
 require_once('../classes/UserDetail.php');
-  
       if(!isset($_SESSION)){session_start();}
        if(!isset($_SESSION['userid'])){
    header('Location:'.WEB_ROOT.'login/index');
- }
- 
-   
- 
+ }  
+
 ?><head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Techvedic</title>
+<title>Techvedic Easyweb</title>
+<link rel="shortcut icon" href="<?php echo IMAGE_ROOT;?>mac.png" type="image/png"> 
 <link href="<?php echo CSS_ROOT;?>bootstrap.min.css" rel="stylesheet">
 <link href="<?php echo CSS_ROOT;?>fontello.css" rel="stylesheet">
 <link href="<?php echo CSS_ROOT;?>nprogress.css" rel="stylesheet">
@@ -28,12 +35,9 @@ require_once('../classes/UserDetail.php');
 <![endif]-->
 </head>
 <?php 
-$getuser=new UserDetail() ;
+$getuser=new UserDetail();
 $getuserdetail=$getuser->userdetails();
-
-
 foreach ($getuserdetail as $viewdata) 
-
 ?>
 
 <div class="top_nav">
@@ -57,7 +61,7 @@ echo strtoupper($short_name);
 ?>
   <span class=" fa icon-angle-down"></span> </a>
           <ul class="dropdown-menu dropdown-usermenu pull-right">
-            <li><a href="<?php echo WEB_ROOT;?>profiles/index.php"> Profile</a></li>
+            <li><a href="<?php echo WEB_ROOT;?>profiles/index.php">Profile</a></li>
             <li> <a href="javascript:;"> <span class="badge bg-red pull-right">50%</span> <span>Settings</span> </a> </li>
             <li><a href="javascript:;">Help</a></li>
             <li><a href="<?php echo WEB_ROOT;?>classes/Logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>

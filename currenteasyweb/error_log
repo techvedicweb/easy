@@ -1,0 +1,20 @@
+[03-Feb-2017 10:17:29 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 3
+[03-Feb-2017 10:17:29 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 3
+[03-Feb-2017 10:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 5
+[03-Feb-2017 10:17:29 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 13
+[03-Feb-2017 10:19:57 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 3
+[03-Feb-2017 10:19:57 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 3
+[03-Feb-2017 10:19:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 5
+[03-Feb-2017 10:19:57 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:19:59 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 3
+[03-Feb-2017 10:19:59 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 3
+[03-Feb-2017 10:19:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 5
+[03-Feb-2017 10:19:59 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:20:01 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 3
+[03-Feb-2017 10:20:01 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 3
+[03-Feb-2017 10:20:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/technet/public_html/easyweb/index.php:2) in /home/technet/public_html/easyweb/index.php on line 5
+[03-Feb-2017 10:20:01 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:20:51 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:35:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/technet/public_html/easyweb/classes/Category.php on line 18
+[03-Feb-2017 10:35:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/technet/public_html/easyweb/index.php on line 11
+[06-Feb-2017 03:43:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/technet/public_html/easyweb/index.php on line 11

@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<body class="nav-md">
-<div class="container body">
-  <div class="main_container">
-    <?php include("../include/top-nav.php"); ?>
-    <?php include("../include/right-nav.php"); ?>
+  <?php include("../include/top-nav.php"); 
+    include("../include/right-nav.php"); ?>
     <div class="right_col" role="main">
       <div class="row">
         <div class="col-sm-7 col-md-8 col-lg-9 col-xs-12 margin-top-10">

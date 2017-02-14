@@ -1,0 +1,2 @@
+[03-Feb-2017 11:28:39 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/technet/public_html/easyweb/asset-form/index.php:8) in /home/technet/public_html/easyweb/classes/Path.php on line 6
+[03-Feb-2017 11:28:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/technet/public_html/easyweb/classes/Category.php on line 18

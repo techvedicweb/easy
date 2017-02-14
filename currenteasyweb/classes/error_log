@@ -1,0 +1,42 @@
+[03-Feb-2017 10:17:51 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 13
+[03-Feb-2017 10:18:53 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:18:53 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:18:54 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:19:47 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:21:10 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:21:11 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:21:11 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:21:13 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:21:13 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:23:54 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:29:32 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 12
+[03-Feb-2017 10:30:59 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 6
+[03-Feb-2017 10:31:01 UTC] PHP Parse error:  syntax error, unexpected '$_SERVER' (T_VARIABLE) in /home/technet/public_html/easyweb/classes/Connection.php on line 6
+[03-Feb-2017 10:33:51 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' (using password: YES) in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:33:51 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:11 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:11 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:12 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:12 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:13 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:13 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:14 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:14 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:16 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:16 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:17 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:17 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:49 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:49 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:50 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:50 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:52 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:52 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:53 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:53 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:53 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:53 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:53 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:53 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:53 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'technet_easyweb'@'s45-40-143-219.secureserver.net' to database 'adminpanel' in /home/technet/public_html/easyweb/classes/Connection.php on line 2
+[03-Feb-2017 10:34:53 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/technet/public_html/easyweb/classes/Connection.php on line 2
