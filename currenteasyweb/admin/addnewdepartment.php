@@ -50,14 +50,14 @@
 </div>
 <div class="row padding-bottom-10">
 <div class="col-sm-12  col-xs-12 padding-bottom-10">
-                    <label>Department Head<span class="text-red">*</span></label>
-                    <input type="text"  id="itil_product_name1" name="department_head" class="form-control" required size="30" pLaceholder="Enter Requesters Name or Email">
+                    <label>Department Head</label>
+                    <input type="text"  id="itil_product_name1" name="department_head" class="form-control"  size="30" pLaceholder="Enter Requesters Name or Email">
                   </div>
 </div>
 <div class="row">
 <div class="col-sm-12  col-xs-12 padding-bottom-10">
-                    <label>Prime User<span class="text-red">*</span></label>
-                    <input type="text"  id="itil_product_name1" name="department_prime_user" class="form-control" required size="30" pLaceholder="Enter Requesters Name or Email">
+                    <label>Prime User</label>
+                    <input type="text"  id="itil_product_name1" name="department_prime_user" class="form-control"  size="30" pLaceholder="Enter Requesters Name or Email">
                   </div>
 </div>
 </div>

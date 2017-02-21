@@ -64,11 +64,11 @@ foreach ($dep_obj as $dep_value)
         <div class="modal-body">
             <div class="row">
 			                  <div class="col-sm-12  col-xs-12 padding-bottom-10">
-  <input type="hidden"  id="itil_product_name1"  name="id" value="<?php echo $dep_value["id"]; ?>"  class="form-control" required >
+  <input type="hidden"  id="itil_product_name1"  name="id" value="<?php echo $dep_value["id"]; ?>"  class="form-control"  >
                  
 
                     <label>Department Name<span class="text-red">*</span></label>
-                    <input type="text"  id="itil_product_name1"  name="department_name" value="<?php echo $dep_value["name"]; ?>"  class="form-control" required >
+                    <input type="text"  id="itil_product_name1"  name="department_name" value="<?php echo $dep_value["name"]; ?>"  class="form-control"  >
                   </div>
 				  </div>
             
@@ -87,13 +87,13 @@ foreach ($dep_obj as $dep_value)
 </div>
 <div class="row padding-bottom-10">
 <div class="col-sm-12  col-xs-12 padding-bottom-10">
-                    <label>Department Head<span class="text-red">*</span></label>
+                    <label>Department Head</label>
                     <input type="text"  id="itil_product_name1" name="department_head" class="form-control" value="<?php echo $dep_value["department_head"]; ?>" pLaceholder="Enter Requesters Name or Email">
                   </div>
 </div>
 <div class="row">
 <div class="col-sm-12  col-xs-12 padding-bottom-10">
-                    <label>Prime User<span class="text-red">*</span></label>
+                    <label>Prime User</label>
                     <input type="text"  id="itil_product_name1" name="department_prime_user" class="form-control"  value="<?php echo $dep_value["prime_user"]; ?>"  pLaceholder="Enter Requesters Name or Email">
                   </div>
 </div>

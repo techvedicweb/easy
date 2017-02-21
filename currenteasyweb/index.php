@@ -8,8 +8,7 @@ ob_start();
  //require_once('classes/UserDetail.php');
  $getuser=new UserDetail() ;
 $getuserdetail=$getuser->userdetails();
-foreach ($getuserdetail as $viewdata) 
- 
+foreach ($getuserdetail as $viewdata)  
  ?>
 <!DOCTYPE html>
 <html lang="en">

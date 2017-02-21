@@ -20,7 +20,7 @@
                 </div>
               </div>
               <div class="clearfix"></div>
-            </div>
+            </div> 
             <div class="x_content">
               <h1 class="h3 padding-bottom-10">New Assets</h1>
               <div class="row">

@@ -10,17 +10,18 @@ ob_start();
     <?php
 require_once('../classes/Path.php');
 require_once('../classes/UserDetail.php');
-      if(!isset($_SESSION)){session_start();}
+      if(!isset($_SESSION)){session_start();}   
        if(!isset($_SESSION['userid'])){
    header('Location:'.WEB_ROOT.'login/index');
  }  
-
-?><head>
+?>
+<head>
 <meta charset="utf-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Techvedic Easyweb</title>
-<link rel="shortcut icon" href="<?php echo IMAGE_ROOT;?>mac.png" type="image/png"> 
+<link rel="shortcut icon" href="<?php echo IMAGE_ROOT;?>favicon.ico" type="image/x-image"> 
 <link href="<?php echo CSS_ROOT;?>bootstrap.min.css" rel="stylesheet">
 <link href="<?php echo CSS_ROOT;?>fontello.css" rel="stylesheet">
 <link href="<?php echo CSS_ROOT;?>nprogress.css" rel="stylesheet">
@@ -29,10 +30,12 @@ require_once('../classes/UserDetail.php');
 <link href="<?php echo CSS_ROOT;?>custom.min.css" rel="stylesheet">
 <link href="<?php echo CSS_ROOT;?>style.css" rel="stylesheet">
 <link  href="<?php echo CSS_ROOT;?>jquery.datetimepicker.css" rel="stylesheet" />
-<!--[if lte IE 8]>
+<!--
+[if lte IE 8]>
 	<script type='text/javascript' src='../js/html5shiv.js'></script>
 	<script type='text/javascript' src='../js/respond.min.js'></script>
-<![endif]-->
+<![endif]
+-->
 </head>
 <?php 
 $getuser=new UserDetail();

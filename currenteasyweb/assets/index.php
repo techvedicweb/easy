@@ -189,11 +189,9 @@ echo '<tr>
 								</tr>';
 
 }
-
 }
 ?>
-								
-						
+
 							</tbody>
                         </table>
 
@@ -294,4 +292,5 @@ function toggle(source) {
 function datafilter(id){
  // alert(id);
 }
+
 </script>
